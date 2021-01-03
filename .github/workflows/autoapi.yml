@@ -53,7 +53,8 @@ jobs:
         git config --global user.name iPixelOldC
         git add .
         git commit -m "update new refresh_token" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.SA }}
+        git push -f origin master
+    #- name: Push changes
+    #  uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.SA }}
